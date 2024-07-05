@@ -15,8 +15,8 @@ import java.util.List;
 
 @RestController
 // @CrossOrigin("http://localhost:3000")
-//@CrossOrigin("https://storyhaven.netlify.app/")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin("https://storyhaven.netlify.app/")
+// @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class BookController {
 
     @Autowired
