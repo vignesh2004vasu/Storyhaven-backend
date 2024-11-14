@@ -15,8 +15,8 @@ import java.util.List;
 
 @RestController
 // @CrossOrigin("http://localhost:3000")
-@CrossOrigin("https://storyhaven.netlify.app/")
-// @CrossOrigin(origins = "*", allowedHeaders = "*")
+// @CrossOrigin("https://storyhaven.netlify.app/")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class BookController {
 
     @Autowired
@@ -26,6 +26,8 @@ public class BookController {
     Book newBook(@RequestBody Book newBook) {
         return bookRepository.save(newBook);
     }
+
+    
     
     @PostMapping("/add")
     public List<Book> addBooks(@RequestBody List<Book> books) {
